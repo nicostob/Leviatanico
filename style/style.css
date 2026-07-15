@@ -1,0 +1,473 @@
+/* Nonostante a fini estetici i font-size dei tag di testo sono stati modificati pressoché ovunque, si è sempre
+mantenuta la proporzione di importanza nelle sezioni, nelle div ecc. - ed esempio: tra h1 e p intercorre sempre,
+comunque, un rapporto di 2:1, e un h2 non supererà mai un h1 in grandezza. */
+html {
+  scroll-behavior: smooth;
+}
+
+/* proprietà raccomandata da W3S per fare sì che il mio calcolo di padding e width-height varie sia "effettivamente" tale */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../images/backgroundCentrato.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  margin:0;
+}
+
+header {
+  padding-top:380px;
+  padding-bottom: 0px;
+  text-align: center;
+  width:100%;
+  font-family: Inter, Arial, sans-serif;
+  text-shadow: 5px 4px 7px rgba(0,0,0,0.35);
+}
+
+.testata {
+  background-color: rgba(45, 45, 45, 0.5);
+  padding-top: 50px;
+  padding-bottom: 100px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.testata .button1 {
+  background-color: rgba(255, 99, 71, 0);
+  font-size: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: #e6e6e6;
+  border-radius: 24px;
+  border: none;
+  transition-duration: 0.5s;
+  font-weight: normal;
+}
+
+.testata .button1:hover {
+  color: #e6e6e6;
+  box-shadow: 5px 4px 7px rgba(0, 0, 0, 0.35);
+  background-color: rgba(247, 243, 237, 0.2);
+}
+
+.testata a {
+  text-align: center;
+  text-decoration: none;
+  margin: none;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  }
+
+.navbar ul {
+  list-style-type: none;
+  background-color: #DBC79B;
+  padding-top:18px;
+  padding-bottom:18px;
+  padding-left: 0px; /* così tolgo il padding automatico che viene dato dal browser ai tag ul per la puntatura*/
+  margin: 0px;
+  text-align: center;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li .aNav {
+  background-color: #E3D2AB;
+  display: block;
+  border-radius: 12px;
+  margin-left: 9px;
+  margin-right: 9px;
+  font-family: Inter, Arial, sans-serif;
+  color: #4D3524;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 90px;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.4s;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: linear-gradient(135deg, #EADFBF 0%, #D8C8A2 100%);
+  border-radius: 16px;
+  padding: 16px 16px;
+  width: max-content;
+  box-shadow: 0 4px 12px rgba(61, 49, 29, 0.1);
+  top: 100%;
+}
+
+.dropdown-content a {
+  text-decoration: none;
+  color: #4D3524;
+}
+
+/*seguono delle class ".allinea..." utilizzate per personalizzare esteticamente i box di servizi, progetto e dati
+facendo sì che appaiano non a sx come catalogo bensì, rispettivamente, al centro e a sx. Non c'è alcuna .allinea sx relativa
+a catalogo semplicemente perché quello l'ho fatto prima di notare questo problema!*/
+
+.allineaSx {
+  left: 2%;
+}
+
+.allineaCentro1 {
+  left: -75%;
+}
+
+.allineaCentro2 {
+  left: -25%;
+}
+
+.allineaDx {
+  right: 2%;
+}
+
+/* segue il box interno al dropdown-content */
+
+.dropdown-content-box {
+  background-color: #ECE0C3;
+  color: #4D3524;
+  border-radius: 8px;
+  font-family: Inter, Arial, sans-serif;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-decoration: none;
+}
+
+.allineaCentro2 .buttonContatti {
+  background-color: #ECE0C3;
+  display: block;
+  border-radius: 12px;
+  font-family: Inter, Arial, sans-serif;
+  color: #4D3524;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 0px;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  border: none;
+  width: 100%;
+}
+
+.allineaCentro2 .buttonContatti:hover {
+  background-color: #ECE0C3;
+  box-shadow: 0 4px 12px rgba(61, 49, 29, 0.1);
+}
+
+.navbar li .aNav:hover {
+  background-color: #ECE0C3;
+  box-shadow: 0 4px 12px rgba(61, 49, 29, 0.1);
+}
+
+.navbar li:hover .dropdown-content {
+  display: block;
+}
+
+.navbar li a.active {
+  background-color: #ECE0C3;
+}
+
+.hero {
+  background: linear-gradient(180deg, #DBC79B 0%, #E5D5AE 50%, #DBC79B 100%);
+  padding-top: 0px;
+  padding-bottom: 60px;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-bottom: 0px;
+  font-family: Inter, Arial, sans-serif;
+  font-weight:normal;
+  font-size: 20px;
+  color: #4D3524;
+  text-align: justify;
+}
+
+.heroBox {
+  background-color: #E7D9B7;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(61, 49, 29, 0.1);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.hero a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hero details {
+  text-align:right;
+}
+
+.hero details summary {
+  background-color: #ECE0C3;
+  display: inline-block;
+  border-radius: 12px;
+  margin-left: 6px;
+  margin-right: 6px;
+  font-family: Inter, Arial, sans-serif;
+  color: #4D3524;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 60px;
+  text-align: right;
+  text-decoration: none;
+  transition-duration: 0.4s;
+}
+
+.hero details summary:hover {
+  background-color: #ECE0C3;
+  box-shadow: 0 4px 12px rgba(61, 49, 29, 0.1);
+}
+
+.hero details p {
+  text-align:left;
+}
+
+.hero details button {
+  background-color: #ECE0C3;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: #4D3524;
+  border-radius: 24px;
+  border: none;
+  transition-duration: 0.5s;
+}
+
+.hero details button:hover {
+  color: #4D3524;
+  box-shadow: 5px 4px 7px rgba(0, 0, 0, 0.2);
+}
+
+.explore {
+  background-color: #D2BA93;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 60px 60px;
+  font-family: Inter, Arial, sans-serif;
+  color: #2D4834;
+  text-align: center;
+}
+
+.explore .internoExplore {
+  background-color: #F0E8DB;
+  margin: 20px 20px;
+  padding: 60px 60px;
+}
+
+.explore a {
+  margin-top: 0px;
+  transition-duration: 0.5s;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  color: #2D4834;
+  font-weight: bold;
+  font-size: 18px;
+  transition-duration: 0.5s;
+  font-size: 20px;
+}
+
+.explore img {
+  transition-duration: 0.5s;
+}
+
+.explore .exploreOpere{
+  background-color: #E7D9B7;
+  display: inline-block;
+  padding: 60px 40px;
+  margin-right: 6px;
+}
+
+.explore .exploreFrontespizi {
+  background-color: #E7D9B7;
+  display: inline-block;
+  padding: 60px 40px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.explore .exploreConcetti {
+  background-color: #E7D9B7;
+  display: inline-block;
+  padding: 60px 40px;
+  margin-left: 6px;
+  margin-right: 6px;
+  margin-top: 6px;
+}
+
+.explore .exploreLuoghiTempi {
+  background-color: #E7D9B7;
+  display: inline-block;
+  margin-left: 6px;
+  padding: 60px 40px;
+}
+
+.explore a div {
+  opacity: 1;
+}
+
+.explore a img {
+  opacity: 0;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.explore a:hover {
+  box-shadow: 0 0px 12px rgba(61, 49, 29, 0.3);
+}
+
+.explore a:hover div {
+  opacity: 0;
+}
+
+.explore a:hover img {
+  opacity: 1;
+}
+
+.contextH {
+  background-color: #DECDB1;
+  color: #4D3524;
+  padding-top: 1px; /* sfrutto il margin che già h3 possiede di default */
+  padding-bottom: 1px;
+  padding-left: 100px;
+  padding-right:100px;
+  font-size: 24px;
+  font-family: Inter, Arial, sans-serif;
+  text-align: left;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.context {
+  background-color: #E9DDCA;
+  color: #4D3524;
+  padding-top: 40px;
+  padding-bottom: 80px;
+  font-family: Inter, Arial, sans-serif;
+  text-align: justify;
+}
+
+.context .contextExpand {
+  background-color: #F0E8DB;
+  padding: 40px 125px;
+}
+
+@keyframes shakeAnimation {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+  20%, 40%, 60%, 80% { transform: translateX(10px); }
+}
+
+.context img:hover {
+  animation-name: shakeAnimation;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+
+.context a {
+  text-decoration: none;
+  color: #4D3524;
+}
+
+.context .contextButton {
+  background-color: #F4F1EA;
+  display: inline-block;/* così non mi occupa tutta la riga (non con "block") e i margin-top-bottom mi funzionano (non con "inline")*/
+  border-radius: 12px;
+  font-family: Inter, Arial, sans-serif;
+  color: #4D3524;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 15px;
+  margin-top: 8px;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  border: none;
+}
+
+.context .contextButton:hover {
+  background-color: #F4F1EA;
+  box-shadow: 0 4px 12px rgba(61, 49, 29, 0.1);
+}
+
+.last {
+  height: 50vh;
+  background-image: url(../images/fondoPagina.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  margin:0;
+}
+
+.lastFooter {
+  background-image: linear-gradient(rgba(45, 45, 45, 0.7)), url(../images/fondoPagina.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  margin:0;
+  color: #E6E6E6;
+  text-align:center;
+  text-decoration: none;
+  font-family: Inter, Arial, sans-serif;
+  font-size: 20px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+footer a {
+  color: #E6E6E6;
+  text-decoration: none;
+}
+
+.lastFooter iframe {
+  width: 300px;
+  height: 175px;
+  border: none;
+  border-radius: 16px;
+  transition-duration: 0.4s;
+}
+
+.lastFooter iframe:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+}
