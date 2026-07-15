@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+	<head>
+		<title>Dati</title>
+		<link rel="icon" type="image/x-icon" href="images/favicon.ico.png">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="style/styleDati.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<header class="testata">
+			<h1 style="font-weight:normal; font-size: 30px; margin-left: 20px; color: #F1F1F1;">Leviatanico: <span style="font-weight: bold">Dati</span></h1>
+		</header>
+		<div id="sideNavig" class="sideNavbar">
+			<button class="closeButton" onclick="closeNav()">&times;</button><!-- W3S usava a href, ma necessitava di JS per il mvt -->
+			<a href="homePage.html" style="margin-top: 50px">Home</a>
+			<a href="catalogo.html">Catalogo</a>
+			<a href="#" class="activeNav">Dati</a>
+			<a href="#">Contatti</a>
+			<a href="#">Progetto</a>
+		</div>
+		<div id="main" class="positionContainer">
+			<div class="navigazione">
+				<h2 style="margin-top: 10px; margin-bottom: 0; margin-right: 0; margin-left: 10px; padding: 0;"><span style="margin-right: 20px" onclick="openNav()">&#9776;</span> Visualizza tutti i dati:</h2>
+			</div>
+			<ul class="breadcrumb">
+				<li><a href="homePage.html" title="Torna alla Home" style="font-weight: bold;">Home</a></li>
+				<li> | Dati</li>
+			</ul>
+		</div>
+		<div class="tableBox">
+			<table>
+				<thead>
+					<tr>
+						<th>Item</th>
+						<th class="dc:title">Titolo</th>
+						<th class="dc:creator">Autore</th>
+						<th class="dc:subject">Soggetto</th>
+						<th class="pe:intellectualPeriod">Periodo intellettuale</th>
+						<th class="dc:date">Data di creazione</th>
+						<th class="pe:placeOfOrigin">Luogo</th>
+						<th class="dc:type">Tipo</th>
+						<th class="dcterms:created">Data di metadatazione</th>
+					</tr>
+				</thead>
+				<tr>
+					<td><a href="#" title="Vai all'item">1</a></td>
+					<td class="dc:title">Medea</td>
+					<td class="dc:creator"><a href="http://viaf.org/viaf/59083895" title="'Thomas Hobbes' su Virtual International Authority File" target="_blank">Thomas Hobbes</a></td>
+					<td class="dc:subject"><a href="http://id.loc.gov/authorities/subjects/sh85100821" title="'Filologia' su Library of Congress Subject Headings" target="_blank">Filologia</a></td>
+					<td class="pe:intellectualPeriod"><a href="http://purl.org/bncf/tid/17850" title="'Opere giovanili' su Biblioteca Nazionale centrale di FIrenze" target="_blank">Opere giovanili</a></td>
+					<td class="dc:date">1602</td>
+					<td class="pe:placeOfOrigin">Sconosciuto</td>
+					<td class="dc:type"><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/" title="Vai allo Standard 'Dublin-Core Metadata Terms'" target="_blank">XML/DCTERMS</a></td>
+					<td class="dcterms:created">2026</td>
+				</tr>
+				<tr>
+					<td><a href="#" title="Vai all'item">2</a></td>
+					<td class="dc:title">Eight Bookes of the Peloponnesian Warre</td>
+					<td class="dc:creator"><a href="http://viaf.org/viaf/59083895" title="'Thomas Hobbes' su Virtual International Authority File" target="_blank">Thomas Hobbes</a></td>
+					<td class="dc:subject"><a href="http://id.loc.gov/authorities/subjects/sh85100821" title="'Filologia' su Library of Congress Subject Headings" target="_blank">Filologia</a></td>
+					<td class="pe:intellectualPeriod"><a href="http://purl.org/bncf/tid/17850" title="'Opere giovanili' su Biblioteca Nazionale centrale di FIrenze" target="_blank">Opere giovanili</a></td>
+					<td class="dc:date">1629</td>
+					<td class="pe:placeOfOrigin"><a href="https://www.geonames.org/2643743" title="'Londra' su GeoNames" target="_blank">Londra</a></td>
+					<td class="dc:type"><a href="https://www.tei-c.org/" title="Vai allo Standard 'Text Encoding Initiative'" target="_blank">XML/TEI</a></td>
+					<td class="dcterms:created">2026</td>
+				</tr>
+				<tr>
+					<td><a href="#" title="Vai all'item">3</a></td>
+					<td class="dc:title">Eight Bookes of the Peloponnesian Warre</td>
+					<td class="dc:creator"><a href="http://viaf.org/viaf/99027196" title="'Thomas Cecill' su Virtual International Authority File" target="_blank">Thomas Cecill</a></td>
+					<td class="dc:subject"><a href="http://id.loc.gov/authorities/subjects/sh85043995" title="'Incisione' su Library of Congress Subject Headings" target="_blank">Incisione</a></td>
+					<td class="pe:intellectualPeriod"><a href="http://purl.org/bncf/tid/17850" title="'Opere giovanili' su Biblioteca Nazionale centrale di FIrenze" target="_blank">Opere giovanili</a></td>
+					<td class="dc:date">1629</td>
+					<td class="pe:placeOfOrigin"><a href="https://www.geonames.org/2643743" title="'Londra' su GeoNames" target="_blank">Londra</a></td>
+					<td class="dc:type"><a href="https://www.getty.edu/publications/categories-description-works-art/" title="Vai allo Standard 'Categories for the Description of Works of Art'" target="_blank">XML/CDWA</a></td>
+					<td class="dcterms:created">2026</td>
+				</tr>
+				<tr>
+					<td><a href="#" title="Vai all'item">4</a></td>
+					<td class="dc:title">Tractatus Opticus II</td>
+					<td class="dc:creator"><a href="http://viaf.org/viaf/59083895" title="'Thomas Hobbes' su Virtual International Authority File" target="_blank">Thomas Hobbes</a></td>
+					<td class="dc:subject"><a href="http://id.loc.gov/authorities/subjects/sh85118553" title="'Scienze' su Library of Congress Subject Headings" target="_blank">Scienze</a></td>
+					<td class="pe:intellectualPeriod"><a href="http://purl.org/bncf/tid/17850" title="'Opere giovanili' su Biblioteca Nazionale centrale di FIrenze" target="_blank">Opere giovanili</a></td>
+					<td class="dc:date">1639</td>
+					<td class="pe:placeOfOrigin"><a href="https://www.geonames.org/2643743" title="'Londra' su GeoNames" target="_blank">Londra</a></td>
+					<td class="dc:type"><a href="https://www.tei-c.org/" title="Vai allo Standard 'Text Encoding Initiative'" target="_blank">XML/TEI</a></td>
+					<td class="dcterms:created">2026</td>
+				</tr>
+				<tr>
+					<td><a href="#" title="Vai all'item">5</a></td>
+					<td class="dc:title">De Cive</td>
+					<td class="dc:creator"><a href="http://viaf.org/viaf/59083895" title="'Thomas Hobbes' su Virtual International Authority File" target="_blank">Thomas Hobbes</a></td>
+					<td class="dc:subject"><a href="http://id.loc.gov/authorities/subjects/sh85100849" title="'Filosofia' su Library Of Congress Subject Headings" target="_blank">Filosofia</a></td>
+					<td class="pe:intellectualPeriod"><a href="http://purl.org/bncf/tid/76489" title="'Opere senili' su Biblioteca Nazionale centrale di FIrenze" target="_blank">Opere senili</a></td>
+					<td class="dc:date">1642</td>
+					<td class="pe:placeOfOrigin"><a href="https://www.geonames.org/2988507/paris.html" title="'Parigi' su GeoNames" target="_blank">Parigi</a></td>
+					<td class="dc:type"><a href="https://www.tei-c.org/" title="Vai allo Standard 'Text Encoding Initiative'" target="_blank">XML/TEI</a></td>
+					<td class="dcterms:created">2026</td>
+				</tr>
+				<tr>
+					<td><a href="#" title="Vai all'item">6</a></td>
+					<td class="dc:title">De Cive</td>
+					<td class="dc:creator"><a href="http://viaf.org/viaf/9904181" title="'Jean Matheus' su Virtual International Authority File" target="_blank">Jean Matheus</a></td>
+					<td class="dc:subject"><a href="http://id.loc.gov/authorities/subjects/sh85043995" title="'Incisione' su Library of Congress Subject Headings" target="_blank">Incisione</a></td>
+					<td class="pe:intellectualPeriod"><a href="http://purl.org/bncf/tid/76489" title="'Opere senili' su Biblioteca Nazionale centrale di FIrenze" target="_blank">Opere senili</a></td>
+					<td class="dc:date">1642</td>
+					<td class="pe:placeOfOrigin"><a href="https://www.geonames.org/2988507/paris.html" title="'Parigi' su GeoNames" target="_blank">Parigi</a></td>
+					<td class="dc:type"><a href="https://www.getty.edu/publications/categories-description-works-art/" title="Vai allo Standard 'Categories for the Description of Works of Art'" target="_blank">XML/CDWA</a></td>
+					<td class="dcterms:created">2026</td>
+				</tr>
+				<tr>
+					<td><a href="item.html" title="Vai all'item">7</a></td>
+					<td class="dc:title">Leviathan</td>
+					<td class="dc:creator"><a href="http://viaf.org/viaf/59083895" title="'Thomas Hobbes' su Virtual International Authority File" target="_blank">Thomas Hobbes</a></td>
+					<td class="dc:subject"><a href="http://id.loc.gov/authorities/subjects/sh85100849" title="'Filosofia' su Library Of Congress Subject Headings" target="_blank">Filosofia</a></td>
+					<td class="pe:intellectualPeriod"><a href="http://purl.org/bncf/tid/76489" title="'Opere senili' su Biblioteca Nazionale centrale di FIrenze" target="_blank">Opere senili</a></td>
+					<td class="dc:date">1651</td>
+					<td class="pe:placeOfOrigin"><a href="https://www.geonames.org/2643743" title="'Londra' su GeoNames" target="_blank">Londra</a></td>
+					<td class="dc:type"><a href="https://www.tei-c.org/" title="Vai allo Standard 'Text Encoding Initiative'" target="_blank">XML/TEI</a></td>
+					<td class="dcterms:created">2026</td>
+				</tr>
+				<tr>
+					<td><a href="#" title="Vai all'item">8</a></td>
+					<td class="dc:title">Leviathan</td>
+					<td class="dc:creator"><a href="http://viaf.org/viaf/61542289" title="'Abraham Bosse' su Virtual International Authority File" target="_blank">Abraham Bosse</a></td>
+					<td class="dc:subject"><a href="http://id.loc.gov/authorities/subjects/sh85043995" title="'Incisione' su Library of Congress Subject Headings" target="_blank">Incisione</a></td>
+					<td class="pe:intellectualPeriod"><a href="http://purl.org/bncf/tid/76489" title="'Opere senili' su Biblioteca Nazionale centrale di FIrenze" target="_blank">Opere senili</a></td>
+					<td class="dc:date">1651</td>
+					<td class="pe:placeOfOrigin"><a href="https://www.geonames.org/2643743" title="'Londra' su GeoNames" target="_blank">Londra</a></td>
+					<td class="dc:type"><a href="https://www.getty.edu/publications/categories-description-works-art/" title="Vai allo Standard 'Categories for the Description of Works of Art'" target="_blank">XML/CDWA</a></td>
+					<td class="dcterms:created">2026</td>
+				</tr>
+				<tr>
+					<td><a href="#" title="Vai all'item">9</a></td>
+					<td class="dc:title">De Corpore</td>
+					<td class="dc:creator"><a href="http://viaf.org/viaf/59083895" title="'Thomas Hobbes' su Virtual International Authority File" target="_blank">Thomas Hobbes</a></td>
+					<td class="dc:subject"><a href="http://id.loc.gov/authorities/subjects/sh85100849" title="'Filosofia' su Library Of Congress Subject Headings" target="_blank">Filosofia</a></td>
+					<td class="pe:intellectualPeriod"><a href="http://purl.org/bncf/tid/76489" title="'Opere senili' su Biblioteca Nazionale centrale di FIrenze" target="_blank">Opere senili</a></td>
+					<td class="dc:date">1655</td>
+					<td class="pe:placeOfOrigin"><a href="https://www.geonames.org/2643743" title="'Londra' su GeoNames" target="_blank">Londra</a></td>
+					<td class="dc:type"><a href="https://www.tei-c.org/" title="Vai allo Standard 'Text Encoding Initiative'" target="_blank">XML/TEI</a></td>
+					<td class="dcterms:created">2026</td>
+				</tr>
+				<tr>
+					<td><a href="#" title="Vai all'item">10</a></td>
+					<td class="dc:title">Six Lessons to the Professors of Mathematics</td>
+					<td class="dc:creator"><a href="http://viaf.org/viaf/59083895" title="'Thomas Hobbes' su Virtual International Authority File" target="_blank">Thomas Hobbes</a></td>
+					<td class="dc:subject"><a href="http://id.loc.gov/authorities/subjects/sh85118553" title="'Scienze' su Library of Congress Subject Headings" target="_blank">Scienze</a></td>
+					<td class="pe:intellectualPeriod"><a href="http://purl.org/bncf/tid/76489" title="'Opere senili' su Biblioteca Nazionale centrale di FIrenze" target="_blank">Opere senili</a></td>
+					<td class="dc:date">1656</td>
+					<td class="pe:placeOfOrigin"><a href="https://www.geonames.org/2643743" title="'Londra' su GeoNames" target="_blank">Londra</a></td>
+					<td class="dc:type"><a href="https://www.tei-c.org/" title="Vai allo Standard 'Text Encoding Initiative'" target="_blank">XML/TEI</a></td>
+					<td class="dcterms:created">2026</td>
+				</tr>
+				<tr>
+					<td><a href="#" title="Vai all'item">11</a></td>
+					<td class="dc:title">De Homine</td>
+					<td class="dc:creator"><a href="http://viaf.org/viaf/59083895" title="'Thomas Hobbes' su Virtual International Authority File" target="_blank">Thomas Hobbes</a></td>
+					<td class="dc:subject"><a href="http://id.loc.gov/authorities/subjects/sh85118553" title="'Scienze' su Library of Congress Subject Headings" target="_blank">Scienze</a></td>
+					<td class="pe:intellectualPeriod"><a href="http://purl.org/bncf/tid/76489" title="'Opere senili' su Biblioteca Nazionale centrale di FIrenze" target="_blank">Opere senili</a></td>
+					<td class="dc:date">1658</td>
+					<td class="pe:placeOfOrigin"><a href="https://www.geonames.org/2643743" title="'Londra' su GeoNames" target="_blank">Londra</a></td>
+					<td class="dc:type"><a href="https://www.tei-c.org/" title="Vai allo Standard 'Text Encoding Initiative'" target="_blank">XML/TEI</a></td>
+					<td class="dcterms:created">2026</td>
+				</tr>
+				<tr>
+					<td><a href="#" title="Vai all'item">12</a></td>
+					<td class="dc:title">Behemoth</td>
+					<td class="dc:creator"><a href="http://viaf.org/viaf/59083895" title="'Thomas Hobbes' su Virtual International Authority File" target="_blank">Thomas Hobbes</a></td>
+					<td class="dc:subject"><a href="http://id.loc.gov/authorities/subjects/sh85100849" title="'Filosofia' su Library Of Congress Subject Headings" target="_blank">Filosofia</a></td>
+					<td class="pe:intellectualPeriod"><a href="http://purl.org/bncf/tid/76489" title="'Opere senili' su Biblioteca Nazionale centrale di FIrenze" target="_blank">Opere senili</a></td>
+					<td class="dc:date">1668</td>
+					<td class="pe:placeOfOrigin"><a href="https://www.geonames.org/2643743" title="'Londra' su GeoNames" target="_blank">Londra</a></td>
+					<td class="dc:type"><a href="https://www.tei-c.org/" title="Vai allo Standard 'Text Encoding Initiative'" target="_blank">XML/TEI</a></td>
+					<td class="dcterms:created">2026</td>
+				</tr>
+				<tr>
+					<td><a href="#" title="Vai all'item">13</a></td>
+					<td class="dc:title">Iliad</td>
+					<td class="dc:creator"><a href="http://viaf.org/viaf/59083895" title="'Thomas Hobbes' su Virtual International Authority File" target="_blank">Thomas Hobbes</a></td>
+					<td class="dc:subject"><a href="http://id.loc.gov/authorities/subjects/sh85100821" title="'Filologia' su Library of Congress Subject Headings" target="_blank">Filologia</a></td>
+					<td class="pe:intellectualPeriod"><a href="http://purl.org/bncf/tid/76489" title="'Opere senili' su Biblioteca Nazionale centrale di FIrenze" target="_blank">Opere senili</a></td>
+					<td class="dc:date">1673</td>
+					<td class="pe:placeOfOrigin"><a href="https://www.geonames.org/2643743" title="'Londra' su GeoNames" target="_blank">Londra</a></td>
+					<td class="dc:type"><a href="https://www.tei-c.org/" title="Vai allo Standard 'Text Encoding Initiative'" target="_blank">XML/TEI</a></td>
+					<td class="dcterms:created">2026</td>
+				</tr>
+				<tr>
+					<td><a href="#" title="Vai all'item">14</a></td>
+					<td class="dc:title">Odyssey</td>
+					<td class="dc:creator"><a href="http://viaf.org/viaf/59083895" title="'Thomas Hobbes' su Virtual International Authority File" target="_blank">Thomas Hobbes</a></td>
+					<td class="dc:subject"><a href="http://id.loc.gov/authorities/subjects/sh85100821" title="'Filologia' su Library of Congress Subject Headings" target="_blank">Filologia</a></td>
+					<td class="pe:intellectualPeriod"><a href="http://purl.org/bncf/tid/76489" title="'Opere senili' su Biblioteca Nazionale centrale di FIrenze" target="_blank">Opere senili</a></td>
+					<td class="dc:date">1673</td>
+					<td class="pe:placeOfOrigin"><a href="https://www.geonames.org/2643743" title="'Londra' su GeoNames" target="_blank">Londra</a></td>
+					<td class="dc:type"><a href="https://www.tei-c.org/" title="Vai allo Standard 'Text Encoding Initiative'" target="_blank">XML/TEI</a></td>
+					<td class="dcterms:created">2026</td>
+				</tr>
+				<tr>
+					<td><a href="#" title="Vai all'item">15</a></td>
+					<td class="dc:title">Principia et Problemata Aliquot Geometrica</td>
+					<td class="dc:creator"><a href="http://viaf.org/viaf/59083895" title="'Thomas Hobbes' su Virtual International Authority File" target="_blank">Thomas Hobbes</a></td>
+					<td class="dc:subject"><a href="http://id.loc.gov/authorities/subjects/sh85118553" title="'Scienze' su Library of Congress Subject Headings" target="_blank">Scienze</a></td>
+					<td class="pe:intellectualPeriod"><a href="http://purl.org/bncf/tid/76489" title="'Opere senili' su Biblioteca Nazionale centrale di FIrenze" target="_blank">Opere senili</a></td>
+					<td class="dc:date">1674</td>
+					<td class="pe:placeOfOrigin"><a href="https://www.geonames.org/2643743" title="'Londra' su GeoNames" target="_blank">Londra</a></td>
+					<td class="dc:type"><a href="https://www.tei-c.org/" title="Vai allo Standard 'Text Encoding Initiative'" target="_blank">XML/TEI</a></td>
+					<td class="dcterms:created">2026</td>
+				</tr>
+				<tr>
+					<td><a href="#" title="Vai all'item">16</a></td>
+					<td class="dc:title">Thomas Hobbes. La vita e il pensiero</td>
+					<td class="dc:creator"><a href="http://viaf.org/viaf/18242" title="'Ferdinand T&ouml;nnies' su Virtual International Authority File" target="_blank">Ferdinand T&ouml;nnies</a></td>
+					<td class="dc:subject"><a href="http://purl.org/bncf/tid/4405" title="'Manuali' su Biblioteca Nazionale centrale di FIrenze" target="_blank">Manuali</a></td>
+					<td class="pe:intellectualPeriod"><a href="http://purl.org/bncf/tid/17850" title="'Opere giovanili' su Biblioteca Nazionale centrale di FIrenze" target="_blank">Opere giovanili</a></td>
+					<td class="dc:date">1896</td>
+					<td class="pe:placeOfOrigin"><a href="https://www.geonames.org/2825297" title="'Stoccarda' su GeoNames" target="_blank">Stoccarda</a></td>
+					<td class="dc:type"><a href="https://www.ifla.org/wp-content/uploads/2019/05/assets/cataloguing/isbd/isbd-cons_20110321.pdf" title="Vai allo Standard 'International Standard Bibliographic Description'" target="_blank">XML/ISBD</a></td>
+					<td class="dcterms:created">2026</td>
+				</tr>
+				<tr>
+					<td><a href="#" title="Vai all'item">17</a></td>
+					<td class="dc:title">Thomas Hobbes</td>
+					<td class="dc:creator"><a href="http://viaf.org/viaf/108336166" title="'Norberto Bobbio' su Virtual International Authority File" target="_blank">Norberto Bobbio</a></td>
+					<td class="dc:subject"><a href="http://purl.org/bncf/tid/4405" title="'Manuali' su Biblioteca Nazionale centrale di FIrenze" target="_blank">Manuali</a></td>
+					<td class="pe:intellectualPeriod"><a href="http://purl.org/bncf/tid/76489" title="'Opere senili' su Biblioteca Nazionale centrale di FIrenze" target="_blank">Opere senili</a></td>
+					<td class="dc:date">1989</td>
+					<td class="pe:placeOfOrigin"><a href="https://www.geonames.org/3165524" title="'Torino' su GeoNames" target="_blank">Torino</a></td>
+					<td class="dc:type"><a href="https://www.ifla.org/wp-content/uploads/2019/05/assets/cataloguing/isbd/isbd-cons_20110321.pdf" title="Vai allo Standard 'International Standard Bibliographic Description'" target="_blank">XML/ISBD</a></td>
+					<td class="dcterms:created">2026</td>
+				</tr>
+				<tr>
+					<td><a href="#" title="Vai all'item">18</a></td>
+					<td class="dc:title">Sul Leviatano</td>
+					<td class="dc:creator"><a href="hhttp://viaf.org/viaf/68946216" title="'Carl Schmitt' su Virtual International Authority File" target="_blank">Carl Schmitt</a></td>
+					<td class="dc:subject"><a href="http://purl.org/bncf/tid/4405" title="'Manuali' su Biblioteca Nazionale centrale di FIrenze" target="_blank">Manuali</a></td>
+					<td class="pe:intellectualPeriod"><a href="http://purl.org/bncf/tid/76489" title="'Opere senili' su Biblioteca Nazionale centrale di FIrenze" target="_blank">Opere senili</a></td>
+					<td class="dc:date">1938</td>
+					<td class="pe:placeOfOrigin"><a href="https://www.geonames.org/2911298" title="'Amburgo' su GeoNames" target="_blank">Amburgo</a></td>
+					<td class="dc:type"><a href="https://www.ifla.org/wp-content/uploads/2019/05/assets/cataloguing/isbd/isbd-cons_20110321.pdf" title="Vai allo Standard 'International Standard Bibliographic Description'" target="_blank">XML/ISBD</a></td>
+					<td class="dcterms:created">2026</td>
+				</tr>
+				<tr>
+					<td><a href="#" title="Vai all'item">19</a></td>
+					<td class="dc:title">The Sovereign State: Hobbes' Leviathan</td>
+					<td class="dc:creator"><a href="http://viaf.org/viaf/279314146" title="'Steven B. Smith' su Virtual International Authority File" target="_blank">Steven Smith</a></td>
+					<td class="dc:subject"><a href="http://purl.org/bncf/tid/6028" title="'Videoregistrazioni' su Biblioteca Nazionale centrale di FIrenze" target="_blank">Videoregistrazioni</a></td>
+					<td class="pe:intellectualPeriod"><a href="http://purl.org/bncf/tid/76489" title="'Opere senili' su Biblioteca Nazionale centrale di FIrenze" target="_blank">Opere senili</a></td>
+					<td class="dc:date">2006</td>
+					<td class="pe:placeOfOrigin"><a href="https://www.geonames.org/4839366" title="'New Haven' su GeoNames" target="_blank">New Haven</a></td>
+					<td class="dc:type"><a href="https://www.loc.gov/standards/amdvmd/audiovideoMDschemas.html" title="Vai allo Standard 'videoMD'" target="_blank">XML/videoMD</a></td>
+					<td class="dcterms:created">2026</td>
+				</tr>
+				<tr>
+					<td><a href="#" title="Vai all'item">20</a></td>
+					<td class="dc:title">Leviatano di Thomas Hobbes</td>
+					<td class="dc:creator"><a href="http://viaf.org/viaf/79063750" title="'Carlo Galli' su Virtual International Authority File" target="_blank">Carlo Galli</a></td>
+					<td class="dc:subject"><a href="http://purl.org/bncf/tid/6028" title="'Videoregistrazioni' su Biblioteca Nazionale centrale di FIrenze" target="_blank">Videoregistrazioni</a></td>
+					<td class="pe:intellectualPeriod"><a href="http://purl.org/bncf/tid/76489" title="'Opere senili' su Biblioteca Nazionale centrale di FIrenze" target="_blank">Opere senili</a></td>
+					<td class="dc:date">2011</td>
+					<td class="pe:placeOfOrigin"><a href="https://www.geonames.org/3173331" title="'Modena' su GeoNames" target="_blank">Modena</a></td>
+					<td class="dc:type"><a href="https://www.loc.gov/standards/amdvmd/audiovideoMDschemas.html" title="Vai allo Standard 'videoMD'" target="_blank">XML/videoMD</a></td>
+					<td class="dcterms:created">2026</td>
+				</tr>
+			</table>
+			<button onclick="window.print()">Stampa la pagina dei dati</button>
+		</div>
+		<footer class="lastFooter">
+			<div class="crediti" style="margin-bottom: 30px;">
+				<a href="#" style="font-weight: bold;">Credits | </a><a href="#" style="font-weight: bold;">Web Project Plan | </a><a href="#" style="font-weight: bold;">Licenze</a>
+			</div>
+			<div>
+				<p style="margin-bottom: 0px">&copy; Copyright (c) 2026 by <em>/DH.arc - Digital Humanities Advanced Research Centre</em>.</p>
+				<p style="margin-top: 5px; margin-bottom: 10px"><a href="https://www.unibo.it/it" title="unibo.it" target="_blank">Alma Mater Studiorum - Università di Bologna</a></p>
+			</div>
+		</footer>
+		<script>
+			function openNav() {
+				document.getElementById("sideNavig").style.width = "22%";
+				document.getElementById("main").style.marginLeft = "22%";
+			}
+
+			function closeNav() {
+				document.getElementById("sideNavig").style.width = "0";
+				document.getElementById("main").style.marginLeft = "0";
+			}
+		</script>
+	</body>
+</html>
