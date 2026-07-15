@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+	<head>
+		<title>Leviathan</title>
+		<link rel="icon" type="image/x-icon" href="images/favicon.ico.png">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="style/styleItem.css">
+	</head>
+	<body>
+		<header class="testata">
+			<h1 style="font-weight:normal; font-size: 30px; margin-left: 20px; color: #F1F1F1;">Leviatanico: <span style="font-weight: bold">Item</span></h1>
+		</header>
+		<div id="sideNavig" class="sideNavbar">
+			<button class="closeButton" onclick="closeNav()">&times;</button><!-- W3S usava a href, ma necessitava di JS per il mvt -->
+			<a href="homePage.html" style="margin-top: 50px">Home</a>
+			<a href="catalogo.html">Catalogo</a>
+			<a href="dati.html">Dati</a>
+			<a href="#">Contatti</a>
+			<a href="#">Progetto</a>
+		</div>
+		<div id="main" class="positionContainer">
+			<div class="navigazione">
+				<h2 style="margin-top: 10px; margin-bottom: 0; margin-right: 0; margin-left: 10px; padding: 0;"><span style="margin-right: 20px" onclick="openNav()">&#9776;</span> Scopri l'oggetto digitale:</h2>
+			</div>
+			<ul class="breadcrumb">
+				<li><a href="homePage.html" title="Torna alla Home" style="font-weight: bold;">Home</a></li>
+				<li><a href="catalogo.html" title="Torna al Catalogo" style="font-weight: bold;"> | Catalogo</a></li>
+				<li> | Item</li>
+			</ul>
+		</div>
+		<div class="columnLeft">
+			<div class="propedeuticaItem">
+				<h3>Propedeutica e Item correlati:</h3>
+			</div>
+			<div class="propedeuticaContent">
+				<div class="propedeuticaText">
+					<a href="#" title="Vai all'oggetto digitale">
+						<h4>Abraham Bosse:</h4>
+						<p>Leviathan Frontispiece</p>
+					</a>
+				</div>
+				<div class="propedeuticaText">
+					<a href="#" title="Vai all'oggetto digitale">
+						<h4>Carl Schmitt:</h4>
+						<p>Sul Leviatano (1938)</p>
+					</a>
+				</div>
+				<iframe width="75%" height="150px" src="video/leviatanoGalli.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen title="Carlo Galli - Leviatano di Thomas Hobbes"></iframe>
+				<a href="#" title="Vai all'oggetto digitale" class="titleVideo">
+					<h4>Carlo Galli:</h4>
+					<p>Leviatano di<br>Thomas Hobbes</p>
+				</a>
+				<iframe width="75%" height="150px" src="video/leviatanoSmith.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen title="Steven Smith - The Sovereign State: Hobbes' Leviathan" ></iframe>
+				<a href="#" title="Vai all'oggetto digitale" class="titleVideo">
+					<h4>Steven Smith:</h4>
+					<p>The Sovereign State:<br>Hobbes' Leviathan</p>
+				</a>
+			</div>
+		</div>
+		<div class="columnRight">
+			<div class="displayBox">
+				<div class="displayTitle">
+					<h3>Leviathan <span style="font-weight: normal; font-style: italic">- Thomas Hobbes</span></h3>
+				</div>
+			</div>
+			<div class="contentTab">
+				<div class="columnContent">
+					<div class="content">
+						<div class="immagineLeviathan"></div><!--preferibile ad un tag img, che mi dava problemi di gestione layout -->
+						<div class="description">
+							<h4>Metadati:</h4>
+							<p class="dcterms:alternative">Titolo completo: <span>Leviathan or the Matter, Forme, &amp; Power of a Common-Wealth Ecclesiastical and Civil</span><sup><a href="https://library.si.edu/digital-library/book/leviathan00hobba" class="super" title="Consulta l'opera conservata presso la 'Smithsonian Libraries'" target="_blank"> Leggi l'edizione originale</a></sup></p>
+							<p class="dc:creator">Autore: <span>Thomas Hobbes</span><sup><a href="http://viaf.org/viaf/59083895" class="super" title="'Thomas Hobbes' su Virtual International Authority File" target="_blank"> Vai alla scheda VIAF</a></sup></p>
+							<p class="dc:date">Data di pubblicazione: <span>1651</span></p>
+							<p class="dc:placeOfOrigin">Luogo di pubblicazione: <span>Londra</span></p>
+							<p class="dc:subject">Genere: <span>Filosofia</span><sup><a href="http://id.loc.gov/authorities/subjects/sh85100849" class="super" title="'Filosofia' su Library of Congress Subject Headings" target="_blank"> Vai alla scheda LCSH</a></sup></p>
+							<p class="intellectualPeriod">Periodo intellettuale: <span>Opere senili</span><sup><a href="http://purl.org/bncf/tid/76489" class="super" title="'Opere senili' su Biblioteca Nazionale Centrale di Firenze" target="_blank"> Vai alla scheda BNCF</a></sup></p>
+							<p class="dc:publisherAnalog">Editore versione analogica: <span>Andrew Crooke</span></p>
+							<p class="dc:extentAnalog">Lunghezza: <span>396 pagine</span></p>
+							<p class="dc:publisherDigital">Editore versione digitale: <span>Project Gutenberg</span><sup><a href="https://www.gutenberg.org/ebooks/3207" class="super" title="Vai alla pagina dell'opera sul sito del Project Gutenberg" target="_blank"> Vai al sito</a></sup></p>
+							<p class="dc:extentDigital">Dimensione: <span>1207kB</span><sup><a href="../materiale/leviathan.zip" class="super" download> Scarica il testo (non arricchito)</a></sup></p>
+							<p class="dc:language">Lingua: <span>Inglese</span></p>
+							<p class="dc:type">Tipo: File di <span>testo</span></p>
+							<a href ="../materiale/leviathanTEI.xml" title="Vai al testo" target="_blank">Vai al testo (XML/TEI)</a>
+							<a href ="../materiale/item7.xml" title="Apri l'Item" target="_blank" style="margin-top: 15px;">Apri la scheda di metadatazione (XML/DCTERMS)</a>
+							<a href ="../materiale/leviathanTEI.zip" title="Scarica il testo" style="margin-top: 15px; background-color: #E8DDD1" download>Scarica l'opera (XML/TEI)</a>
+							<a href ="../materiale/item7.zip" title="Scarica la scheda di metadatazione" style="margin-top: 15px; background-color: #E8DDD1" download>Scarica la scheda (XML/DCTERMS)</a>
+						</div>
+					</div>
+				</div>
+				<div style="clear: both"></div>
+			</div>
+		</div>
+		<footer class="lastFooter">
+			<div class="crediti" style="margin-bottom: 30px;">
+				<a href="#" style="font-weight: bold;">Credits | </a><a href="#" style="font-weight: bold;">Web Project Plan | </a><a href="#" style="font-weight: bold;">Licenze</a>
+			</div>
+			<div>
+				<p style="margin-bottom: 0px">&copy; Copyright (c) 2026 by <em>/DH.arc - Digital Humanities Advanced Research Centre</em>.</p>
+				<p style="margin-top: 5px; margin-bottom: 10px"><a href="https://www.unibo.it/it" title="unibo.it" target="_blank">Alma Mater Studiorum - Università di Bologna</a></p>
+			</div>
+		</footer>
+		<script>
+			function openNav() {
+				document.getElementById("sideNavig").style.width = "22%";
+				document.getElementById("main").style.marginLeft = "22%";
+			}
+
+			function closeNav() {
+				document.getElementById("sideNavig").style.width = "0";
+				document.getElementById("main").style.marginLeft = "0";
+			}
+		</script>
+	</body>
+</html>
