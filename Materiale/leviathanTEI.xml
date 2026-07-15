@@ -1,0 +1,279 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main">Leviathan</title>
+				<title type="sub">Leviathan or the Matter, Forme, &amp; Power of a Common-Wealth Ecclesiastical and Civil</title>
+				<author xml:id="TH" ref="https://lccn.loc.gov/n79059190 http://viaf.org/viaf/59083895">Thomas Hobbes</author>
+				<!-- i role seguenti sono stati presi dalla lista MARC Code della Library of Congress (una sorta di LCSH ma per ruoli editoriali) -->
+				<editor role="editor" xml:id="PG" ref="https://www.gutenberg.org/">Project Gutenberg</editor>
+				<editor role="transcriber">Edward White</editor>
+				<editor role="transcriber">David Widger</editor>
+				<funder xml:id="ER.GO" ref="https://www.er-go.it/">Emilia-Romagna.GO - Azienda Regionale per il Diritto agli Studi Superiori</funder>
+				<respStmt>
+					<resp>Creazione dell'oggetto digitale, della relativa metadatazione e codifica</resp>
+					<persName xml:id="NB" ref="https://github.com/nicostob">Nicola Bonalda</persName>
+				</respStmt>
+			</titleStmt>
+			<!-- segue l'editionStmt che, come indicato nelle TEI guidelines (2.2.2), in questo caso potrebbe a dire il vero essere omesso,
+			trattandosi di una prima versione. Tuttavia, riprendendo l'esempio introduttivo di questo stesso elemento su teibyexample, a fini di esaustività si è deciso di porlo, indicando che questo file è l'arricchimento di un file testuale precedente (quello di PG) -->
+			<editionStmt>
+				<edition n="enriched">
+					<title>Versione arricchita di marcatori tematici del file leviathan.txt del PG</title>
+					<date>2026</date>
+				</edition>
+				<respStmt>
+					<resp>Aggiunta di marcatori tematici</resp>
+					<persName>Nicola Bonalda</persName>
+				</respStmt>
+			</editionStmt>
+			<extent>1321kb</extent>
+			<publicationStmt>
+				<publisher>Project Gutenberg</publisher>
+				<pubPlace ref="https://www.gutenberg.org/ebooks/3207">Online</pubPlace>
+				<idno type="ESTC">https://datb.cerl.org/estc/R17253</idno>
+				<date type="released" when="2002-05-01">01 maggio 2002</date>
+				<date type="lastUpdate" when="2025-09-17">17 settembre 2025</date>
+				<license ref="https://www.gutenberg.org/policy/license.html">Licenza libera secondo i canoni previsti dal Project Gutenberg</license>
+			</publicationStmt>
+			<sourceDesc> 
+			<!-- si è preferito adoperare il nodo "biblStruct" poiché, oltre a possedere i valori necessari (essendo la fonte esistente eccome), esso rappresenta il più strutturato ed esaustivo approccio di codificaizone (per questa sezione del teiHeader) previsto da teibyexample, che, infatti, per l'ancora più fitto "biblFull" rimanda direttamente alla pagine di TEI -->
+				<biblStruct>
+					<monogr>
+						<title>Leviathan or the Matter, Forme, &amp; Power of a Common-Wealth Ecclesiastical and Civil</title>
+						<author>Thomas Hobbes of Malmesbury</author>
+						<imprint>
+							<pubPlace role="city" xml:id="LD" ref="https://www.geonames.org/2643743">London</pubPlace>
+							<!-- controintuitivamente, "role" e non "type" poiché "type" non è un attributo contemplato da TEI per pubPlace. -->
+							<pubPlace role="address">Green Dragon, St. Paulus Church-yard</pubPlace>
+							<publisher xml:id="AC">Andrew Crooke</publisher>
+							<date when="1651">1651</date>
+						</imprint>
+						<extent>396p</extent>
+					</monogr>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<editorialDecl resp="#PG"><!-- "#" mi permette di rimandare all'xml:id="PG" scritto sopra -->
+				<correction status="high" method="silent">
+					<p>Non sono state fatte dichiarazioni di correzioni effettuate: il testo non presenta errori.</p>
+				</correction>
+				<normalization method="silent">
+					<p>L'uso di parole o frasi intere in maiuscolo è stato integralmente conservato, ad eccezione dei titoli di capitoli, scritti interamente in maiuscolo sostituendo il misto di maiuscolo e corsivo impiegato da Hobbes. L'impiego del maiuscolo nelle citazioni è stato conservato invariatamente.</p>
+					<p>Laddove il corsivo sembri essere usato per enfasi, per nomi propri o semplicemente per scelta, si è posta in maiuscolo la prima lettera delle parole.</p>
+					<p>Laddove le note a margine servano ad introdurre l'argomento del paragrafo o le definizioni delle parole, esse sono state incluse come intestazioni di paragrafo, con tutte le parole dall'iniziale maiuscola e su una riga abbreviata.</p>
+					<p>Per l'alfabeto greco, vi si sono sostituite le lettere comuni più simili, usando la maiuscola iniziale.</p>
+					<p>Per ogni parola in lingua straniera si è adoperata la lettera maiuscola.</p>
+				</normalization>
+				<quotation marks="all">
+					<p>Laddove è evidente che il corsivo indichi una citazione, sono state inserite le virgolette.</p>
+					<p>I riferimenti a margine delle citazioni sono stati inclusi nel testo, tra parentesi quadre, immediatamente accanto alla citazione stessa. Laddove Hobbes ha incluso i riferimenti nel testo principale, essi sono stati conservati identicamente, ad eccezione della sostituzione delle parentesi quadre con parentesi tonde.</p>
+				</quotation>
+			</editorialDecl>
+			<editorialDecl resp="#NB">
+				<normalization method="markup">
+					<p>Le parole scritte in maiuscolo a fini enfatici sono state conservate invariatamente, ma marcate con il tag <gi>emph</gi>.</p>
+					<p>Le parole di ortografia antica sono state normalizzate nel caso in cui si sia ritenuto potessero complicare eccessivamente la scorrevolezza del testo, marcandole con gli elementi <gi>orig</gi> e <gi>reg</gi>, racchiusi nel tag <gi>choice</gi>.</p>
+					<p>Le abbreviazioni sono state marcate ovunque in maniera analoga alle normalizzazioni ortografiche: vale a dire, a fini d'esaustività, mediante i tags <gi>abbr</gi> ed <gi>expan</gi>, racchiusi in <gi>choice</gi>.</p>
+				</normalization>
+				<normalization method="silent">
+					<p>La s lunga (ſ) è stata normalizzata sempre.</p>
+					<p>Le parole scritte in maiuscolo a fini strutturali sono state conservate invariatamente.</p>
+				</normalization>
+			</editorialDecl>
+			<projectDesc resp="PG">
+				<p>The E-text was prepared to enrich the Project Gutenberg's library, already counting over 75000 free eBooks.</p>
+			</projectDesc>
+			<projectDesc resp="#NB">
+				<p>Lo scopo di questa codificazione è quello di impiegare l'utilizzo della TEI coerentemente agli obbiettivi dichiarati da Leviatanico.</p>
+			</projectDesc>
+			<tagsDecl>
+				<!-- si è provato ad aggiungere una rendition con linguaggio CSS di TUTTA la pagina del frontespizio testuale -->
+				<rendition scheme="CSS" xml:id="frontespizioTestuale">text-align: center; color: #000000; font-family: "Times New Roman", serif; background-color: #ffffff; padding: 80px 60px; display: block;</rendition>
+				<rendition scheme="CSS" xml:id="mainTitle">font-size: 50px; font-weight: bold; letter-spacing: 12px;</rendition>
+				<!-- OR, OF A, ed ECCLESIASTICAL -->
+				<rendition scheme="CSS" xml:id="segmentoUnione">font-size: 22px; letter-spacing: 6px;</rendition>
+				<rendition scheme="CSS" xml:id="matterFormePower">font-size: 35px; letter-spacing: 4px;</rendition>
+				<rendition scheme="CSS" xml:id="commonWealthStyle">font-size: 35px; font-weight: bold; letter-spacing: 4px;</rendition>
+				<!-- AND -->
+				<rendition scheme="CSS" xml:id="secondoSegmentoUnione">font-size: 20px; letter-spacing: 6px;</rendition>
+				<rendition scheme="CSS" xml:id="civillStyle">font-size: 25px; font-weight: bold; letter-spacing: 12px;</rendition>
+				<rendition scheme="CSS" xml:id="authorMalmesbury">font-size: 18px; letter-spacing: 6px;</rendition>
+				<rendition scheme="CSS" xml:id="editorAddress">font-size: 16px; letter-spacing: 2px;</rendition>
+				<rendition scheme="CSS" xml:id="titleParagraph">font-size: 22px; letter-spacing: 6px;</rendition>
+				<rendition scheme="CSS" xml:id="textPage">text-align: justify; color: #000000; font-family: "Times New Roman", serif; background-color: #ffffff; padding: 80px 120px; display: block; font-size: 16px;</rendition>
+				<rendition scheme="CSS" xml:id="emphasize">font-size: 16px; letter-spacing: 2px; text-transform: uppercase;</rendition>
+				<namespace name="http​://www​.tei​-c.org​/ns​/1.0">
+					<tagUsage gi="div">Marcatore di blocchi di stringhe di testo, potenzialmente contenenti diversi <gi>p</gi> ed <gi>head</gi></tagUsage>
+					<tagUsage gi="head" rendition="#titleParagraph">Marcatore di titoli di paragrafo nel testo</tagUsage>
+					<tagUsage gi="p" rendition="#textPage">Marcatore di paragrafi nel testo</tagUsage>
+					<tagUsage gi="emph" rendition="#emphasize">Marcatore di stringhe di testo maiuscole per fini enfatici</tagUsage>
+					<tagUsage gi="choice">Marcatore di comunicazione di una scelta normalizzatrice, contenente altri relativi tag.</tagUsage>
+					<tagUsage gi="orig">Marcatore d'indicazione della forma originale, nella fonte, di una parola.
+					Accoppiato con <gi>reg</gi> in <gi>choice</gi></tagUsage>
+					<tagUsage gi="reg">Marcatore d'indicazione della forma regolarizzata di una parola espressa in forma originale.
+					Accoppiato con <gi>orig</gi> in <gi>choice</gi></tagUsage>
+					<tagUsage gi="abbr">Marcatore d'indicazione di una forma abbreviata. Accoppiato con <gi>expan</gi> in <gi>choice</gi></tagUsage>
+					<tagUsage gi="expan">Marcatore d'indicazione della variante espansa di una forma originalmente abbreviata.
+					Accoppiato con <gi>abbr</gi> in <gi>choice</gi></tagUsage>
+					<tagUsage gi="name">Marcatore di nome proprio</tagUsage>
+					<tagUsage gi="date">Marcatore di date, privilegiando il calendario Gregoriano</tagUsage>
+					<tagUsage gi="term">Marcatore di termini ritenuti interessanti ed importanti a fini esegetico-interpretativi</tagUsage>
+				</namespace>
+			</tagsDecl>
+			<refsDecl><!-- la refsDecl che segue è stata fatta utilizzando come modello quella proposta su teibyexample -->
+				<p>I paragrafi del testo sono numerati con l'attributo <att>n</att>. Ogni numero è composto da quattro cifre; la numerazione è consecutiva in tutto il libro. Ad esempio: <val>0135</val> numera il 135° paragrafo del libro.</p>
+				<p>Ogni parte del libro è identificata da un codice identificativo formale all'interno dell'attributo <att>xml:id</att>, con numerazione latina. Lo stesso valga per i capitoli, i quali sono tuttavia numerati con numeri arabi crescenti ed una quantità di cifre uguale a quella effettivamente corrispondente, non preceduta da alcuno zero.</p>
+				<p>Dal momento che Hobbes stesso ha impiegato una numerazione consecutiva dei capitoli, anziché interromperla ricominciando per ognuna delle IV parti, questo impianto è stato mantenuto invariato.</p>
+			</refsDecl>
+		</encodingDesc>
+		<profileDesc>
+			<creation>Il manoscritto del Leviathan è stato composto durante la Guerra civile inglese, probabilmente proprio tra il <date when="1642">1642</date> ed il <date when="1651">1651</date>, tra <name type="city">Parigi</name> e <name type="city" ref="#LD">Londra</name>.</creation>
+			<langUsage><!-- ricorda che il valore dell'attributo "usage" è (una stima) in percentuale -->
+				<language ident="en" usage="95">English</language>
+				<language ident="lat" usage="3">Latin</language>
+				<language ident="grc" usage="1">Ancient Greek</language>
+				<language ident="hbo" usage="1">Biblical Hebrew</language>
+			</langUsage>
+		</profileDesc>
+		<revisionDesc xmlns="http://www.tei-c.org/ns/1.0">
+			<change when="2026-06-11" who="#NB">ultimo controllo e correzioni</change>
+			<change when="2026-06-02" who="#NB">controllo del file</change>
+			<change when="2026-05-25" who="#NB">file ultimato con marcatori</change>
+			<change when="2026-05-20" who="#NB">creazione del file</change>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<front>
+			<div type="frontispiece" source="item8.xml">
+				<figure>
+					<graphic url="https://upload.wikimedia.org/wikipedia/commons/a/a3/Leviathan_frontispiece_cropped_British_Library.jpg"/>
+					<head>Frontespizio del Leviatano</head>
+					<figDesc>Celeberrima rappresentazione contrattualistica del Leviatano a mezzo busto, reggente, nella mano destra, la spada e, nella mano sinistra, il pastorale. Dinanzi a sé, una città vuota.</figDesc>
+				</figure>
+				<p>Leviathan or the Matter, Forme, &amp; Power of a Common-Wealth Ecclesiastical and Civil.</p>
+				<p>By <name type="person" role="author" ref="#TH">Thomas Hobbes</name> of <name type="city" ref="https://www.geonames.org/2643146/malmesbury.html">Malmesbury</name></p>
+				<p><name type="city" ref="#LD">London</name></p>
+				<p>Printed for <name type="person" role="publisher" ref="#AC">Andrew Crooke</name></p>
+				<p>1651</p>
+			</div>
+			<titlePage rendition="#frontespizioTestuale">
+				<docTitle>
+					<titlePart type="main" rendition="#mainTitle">LEVIATHAN</titlePart>
+					<titlePart type="sub" rendition="#segmentoUnione">OR</titlePart>
+					<titlePart type="sub" rendition="#matterFormePower">The Matter, Forme, &amp; Power</titlePart>
+					<titlePart type="sub" rendition="#segmentoUnione">OF A</titlePart>
+					<titlePart type="sub" rendition="#commonWealthStyle">COMMON-WEALTH</titlePart>
+					<titlePart type="sub" rendition="#segmentoUnione">ECCLESIASTICAL</titlePart>
+					<titlePart type="sub" rendition="#secondoSegmentoUnione">AND</titlePart>
+					<titlePart type="sub" rendition="#civillStyle">CIVILL.</titlePart>
+				</docTitle>
+				<byline rendition="#authorMalmesbury">By <docAuthor>THOMAS HOBBES</docAuthor> of Malmesbury.</byline>
+				<docImprint rendition="#editorAddress"><pubPlace>LONDON</pubPlace>, Printed for <publisher>ANDREW CROOKE</publisher>, at the <pubPlace>Green Dragon in St.Pauls Church-yard</pubPlace>, <docDate>1651</docDate></docImprint>
+			</titlePage>
+			<div type="dedication" xml:id="dedication">
+				<head type="paragraphTitle">TO MY MOST HONOR’D FRIEND <choice><abbr>Mr.</abbr><expan>Mister</expan></choice> <name xml:id="FG" type="person" ref="http://viaf.org/viaf/160399793">FRANCIS GODOLPHIN of Godolphin</name>.</head>
+				<p n="0001">HONOR’D SIR.
+				Your most worthy Brother <choice><abbr>Mr.</abbr><expan>Mister</expan></choice> <name xml:id="SG" type="person" ref="http://viaf.org/viaf/12356874">SIDNEY GODOLPHIN</name>, when he lived, was <choice><abbr>pleas’d</abbr><expan>pleased</expan></choice>
+				to think my studies something, and otherwise to oblige me, as you know,
+				with reall testimonies of his good opinion, great in themselves, and the
+				greater for the worthinesse of <name type="person" ref="#SG">his person</name>. For there is not any <choice><orig>vertue</orig><reg>virtue</reg></choice>
+				that <choice><orig>disposeth</orig><reg>disposes</reg></choice> a man, either to the service of <term type="religion" ref="#god">God</term>, or to the service
+				of his <term xml:id="kingdom" type="politicalConcept">Country</term>, to <term xml:id="civilSociety" type="philosophicalConcept">Civill Society</term>, or private Friendship, that did not
+				manifestly appear in his conversation, not as acquired by necessity,
+				or affected upon occasion, but inhaerent, and shining in a generous
+				constitution of his nature.<!-- --></p>
+				<p n="0002">Sir,
+				Your most humble, and most obedient servant, <name type="person" role="author" ref="#TH">Thomas Hobbes</name>.
+				<name type="city" xml:id="PR" ref="https://www.geonames.org/2988507/paris.html">Paris</name> <date when="1651-04-25" calendar="Gregorian">APRILL 15/25 1651</date>.</p>
+			</div>
+			<div type="toc"><!-- dove "toc" sta, all'inglese, per "Table of Contents", appunto -->
+				<head>The Contents of the Chapters.</head>
+				<list>
+					<item> <ref target="#introduction">INTRODUCTION</ref></item>
+				</list>
+				<list>
+					<head><ref target="#ofMan">The first part, OF MAN.</ref></head>
+					<item n="1"><ref target="#ofSense">1. OF SENSE</ref></item>
+					<item n="2"><ref target="#ofImagination">2. OF IMAGINATION</ref></item>
+					<item n="3"><ref target="#ofTheConsequences">3. OF THE CONSEQUENCES OR TRAIN OF IMAGINATIONS</ref></item>
+					<item n="4"><ref target="#ofSpeech">4. OF SPEECH</ref></item>
+					<item n="5"><ref target="#ofReasonAndScience">5. OF REASON AND SCIENCE</ref></item>
+					<item n="6"><ref target="#ofTheInteriourBeginnings">6. OF THE INTERIOUR BEGINNINGS OF VOLUNTARY MOTIONS, COMMONLY CALLED THE PASSIONS; AND THE SPEECHES BY WHICH THEY ARE EXPRESSED</ref></item>
+					<item n="7"><ref target="#ofTheEndsOrResolutions">7. OF THE ENDS OR RESOLUTIONS OF DISCOURSE</ref></item>
+					<item n="8"><ref target="#ofTheVertues">8. OF THE VERTUES, COMMONLY CALLED INTELLECTUALL, AND THEIR CONTRARY DEFECTS</ref></item>
+					<item n="9"><ref target="#ofTheSeverallSubjects">9. OF THE SEVERALL SUBJECTS OF KNOWLEDGE</ref></item>
+					<item n="10"><ref target="#ofPowerWorthDignity">10. OF POWER, WORTH, DIGNITY, HONOUR, AND WORTHINESSE</ref></item>
+					<item n="11"><ref target="#ofTheDifferenceOfManners">11. OF THE DIFFERENCE OF MANNERS</ref></item>
+					<item n="12"><ref target="#ofReligion">12. OF RELIGION</ref></item>
+					<item n="13"><ref target="#ofTheNaturallCondition">13. OF THE NATURALL CONDITION OF MANKIND AS CONCERNING THEIR FELICITY AND MISERY</ref></item>
+					<item n="14"><ref target="#ofTheFirstAndSecond">14. OF THE FIRST AND SECOND NATURALL LAWES, AND OF CONTRACT</ref></item>
+					<item n="15"><ref target="#ofOtherLawesOfNature">15. OF OTHER LAWES OF NATURE</ref></item>
+					<item n="16"><ref target="#ofPersonsAuthors">16. OF PERSONS, AUTHORS, AND THINGS PERSONATED</ref></item>
+				</list>
+				<list>
+					<head><ref target="#ofCommonWealth">The second part, OF COMMON-WEALTH.</ref></head>
+					<item n="17"><ref target="#ofTheCausesGeneration">17. OF THE CAUSES, GENERATION, AND DEFINITION OF A COMMON-WEALTH</ref></item>
+					<!-- -->
+				</list>
+				<list>
+					<head><ref target="#ofChristianCommonWealth">The third part, OF A CHRISTIAN COMMON-WEALTH</ref></head>
+					<!-- -->
+				</list>
+				<list>
+					<head><ref target="#ofTheKingdomeOfDarknesse">The fourth part, OF THE KINGDOME OF DARKNESSE</ref></head>
+					<!-- -->
+				</list>
+				<list>
+					<item n="48"><ref target="#aReviewAndConclusion">48. A REVIEW AND CONCLUSION</ref></item>
+				</list>
+			</div>
+		</front>
+		<body>
+			<div type="introduction" xml:id="introduction">
+				<head type="paragraphTitle">THE INTRODUCTION</head>
+				<p n="0003"><term xml:id="nature" type="philosophicalConcept"><emph>Nature</emph></term> (the art whereby <term xml:id="god" type="religion">God</term> hath made and governes the world) is by the art of <term type="philosophicalConcept" ref="#man">man</term>, as in many other things, so in this also imitated, that it
+				can make an <term xml:id="leviathan" type="philosophicalConcept">Artificial Animal</term>. <!-- --></p>
+				<p n="0004">To describe the <term type="philosophicalConcept" ref="#nature">Nature</term> of this <term type="philosophicalConcept" ref="#leviathan">Artificiall man</term>, I will consider</p>
+				<list>
+					<item n="1"><ref target="#ofMan">First the Matter thereof, and the <term type="philosophicalConcept" ref="#man">Artificer</term>; both which is <term xml:id="man" type="philosophicalConcept">Man</term>.</ref></item>
+					<item n="2"><ref target="#ofCommonWealth">Secondly, How, and by what <term xml:id="covenant" type="philosophicalConcept">Covenants</term> it is made; what are the <term xml:id="rights" type="juridicalConcept">Rights</term> and
+					just <term xml:id="power" type="philosophicalConcept">Power</term> or <term xml:id="authority" type="philosophicalConcept">Authority</term> of a <term xml:id="sovereign" type="politicalConcept">Soveraigne</term>; and what it is that Preserveth
+					and Dissolveth it.</ref></item>
+					<item n="3"><ref target="#ofChristianCommonWealth">Thirdly, what is a <term xml:id="christian" type="religion">Christian</term> <term xml:id="commonWealth" type="politicalConcept">Common-Wealth</term>.</ref></item>
+					<item n="4"><ref target="#ofTheKingdomeOfDarknesse">Lastly, what is the <term xml:id="kingdomDarkness" type="politicalConcept">Kingdome of Darkness</term>.</ref></item>
+				</list>
+				<p n="0005">Concerning the first,<!-- --></p>
+				<p n="0006">But let one man read another <!-- --></p>
+			</div>
+			<div type="part" n="I" xml:id="ofMan"><!-- --></div>
+			<div type="chapter" n="1" xml:id="ofSense"><!-- --></div>
+			<div type="chapter" n="2" xml:id="ofImagination"><!-- --></div>
+			<div type="chapter" n="3" xml:id="ofTheConsequences"><!-- --></div>
+			<div type="chapter" n="4" xml:id="ofSpeech"><!-- --></div>
+			<div type="chapter" n="5" xml:id="ofReasonAndScience"><!-- --></div>
+			<div type="chapter" n="6" xml:id="ofTheInteriourBeginnings"><!-- --></div>
+			<div type="chapter" n="7" xml:id="ofTheEndsOrResolutions"><!-- --></div>
+			<div type="chapter" n="8" xml:id="ofTheVertues"><!-- --></div>
+			<div type="chapter" n="9" xml:id="ofTheSeverallSubjects"><!-- --></div>
+			<div type="chapter" n="10" xml:id="ofPowerWorthDignity"><!-- --></div>
+			<div type="chapter" n="11" xml:id="ofTheDifferenceOfManners"><!-- --></div>
+			<div type="chapter" n="12" xml:id="ofReligion"><!-- --></div>
+			<div type="chapter" n="13" xml:id="ofTheNaturallCondition"><!-- --></div>
+			<div type="chapter" n="14" xml:id="ofTheFirstAndSecond"><!-- --></div>
+			<div type="chapter" n="15" xml:id="ofOtherLawesOfNature"><!-- --></div>
+			<div type="chapter" n="16" xml:id="ofPersonsAuthors"><!-- --></div>
+			<div type="part" n="II" xml:id="ofCommonWealth"><!-- --></div>
+			<div type="chapter" n="17" xml:id="ofTheCausesGeneration"><!-- --></div>
+			<!-- -->
+			<div type="part" n="III" xml:id="ofChristianCommonWealth"><!-- --></div>
+			<!-- -->
+			<div type="part" n="IV" xml:id="ofTheKingdomeOfDarknesse"><!-- --></div>
+			<div type="chapter" n="48" xml:id="aReviewAndConclusion"><!-- --></div>
+		</body>
+		<back>
+			<ab>FINIS</ab>
+		</back>
+	</text>
+</TEI>
